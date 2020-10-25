@@ -4,7 +4,7 @@ This is just a repo to document my study of Amazon ECS and docker compose.
 I'm following this [AWS tutorial](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-cli-tutorial-ec2.html).
 
 ## Useful links:
-Here is how to define [install ecs-cli](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_installation.html).
+Here is how to [install ecs-cli](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_installation.html).
 
 The ecs-cli command line [reference](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_reference.html).
 
@@ -22,5 +22,7 @@ ecs-cli compose service up \
 ```
 
 See this, StackOverflow [thread](https://stackoverflow.com/questions/53898568/ecs-cli-compose-service-up-with-a-load-balancer) for more details.
+
+In addition, the ecs-cli allows to create/destroy cluster, create/destroy/scale services and task, and other cool stuffs directly from the CLI.
 
 To extract the full power of this cli tool it is recommended to have first an understanding of the AWS ECS service.
