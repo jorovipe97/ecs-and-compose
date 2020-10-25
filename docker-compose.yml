@@ -1,0 +1,7 @@
+version: '3'
+# This is just a simple boring and simple docker-compose file.
+services:
+  web:
+    image: amazon/amazon-ecs-sample
+    ports:
+      - "80:80"

@@ -1,0 +1,18 @@
+version: 1
+# More info about the content of this file
+# https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli-compose-ecsparams.html
+# To use this with ecs-cli with load balancer configured.
+# https://stackoverflow.com/questions/53898568/ecs-cli-compose-service-up-with-a-load-balancer
+# ecs-cli compose service up --target-group-arn ARN --container-name CONTAINER_TO_BALACE --container-port PORT
+# task_size:
+#   cpu_limit: string
+#   # This defaults to mb and is the task defintion limits while the services' mem limits defaults to bytes
+#   # this maybe confusing and it is explained in here https://github.com/aws/amazon-ecs-cli/issues/727#issuecomment-464861410
+#   mem_limit: string
+task_definition:
+  services:
+    web:
+      cpu_shares: 100
+      # This is in bytes. has to be especified in bytes to work correctly with ecs.
+      # not in mb compared to task_size.mem_limit
+      mem_limit: 524288000
