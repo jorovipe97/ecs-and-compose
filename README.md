@@ -25,4 +25,4 @@ See this, StackOverflow [thread](https://stackoverflow.com/questions/53898568/ec
 
 In addition, the ecs-cli allows to create/destroy cluster, create/destroy/scale services and task, and other cool stuffs directly from the CLI.
 
-To extract the full power of this cli tool it is recommended to have first an understanding of the AWS ECS service.
+To extract the full power of this cli tool it is recommended to first have an understanding of the AWS ECS service.
